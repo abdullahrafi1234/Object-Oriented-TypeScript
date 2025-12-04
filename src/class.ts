@@ -1,6 +1,15 @@
-console.log("Object-Oriented TypeScript");
+// oop - class ==> object
 
-const objedc = {
-  id: 2555,
-  name: "abir",
-};
+class Animal {
+  name: string;
+  species: string;
+  sound: string;
+
+  constructor(name: string, species: string, sound: string) {
+    this.name = name;
+    this.species = species;
+    this.sound = sound;
+  }
+}
+
+const dog = new Animal("dogesh", "dog", "gheo ghew");
