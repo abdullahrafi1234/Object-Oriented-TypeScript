@@ -3,7 +3,7 @@
 class Counter {
   static count: number = 0;
 
-  increment() {
+  static increment() {
     return (Counter.count = Counter.count + 1);
   }
   decrement() {
@@ -12,15 +12,19 @@ class Counter {
 }
 
 const instance1 = new Counter();
-console.log(instance1.increment());
-console.log(instance1.increment());
-console.log(instance1.increment());
-console.log(instance1.increment());
+// console.log(instance1.increment());
+// console.log(instance1.increment());
+// console.log(instance1.increment());
+// console.log(instance1.increment());
 
-const instance2 = new Counter();
-console.log(instance2.increment());
-console.log(instance2.increment());
+// const instance2 = new Counter();
+// console.log(instance2.increment());
+// console.log(instance2.increment());
 
-const instance3 = new Counter();
-console.log(instance3.increment());
-console.log(instance3.increment());
+// const instance3 = new Counter();
+// console.log(instance3.increment());
+// console.log(instance3.increment());
+
+console.log(Counter.increment());
+console.log(Counter.increment());
+console.log(Counter.increment());
