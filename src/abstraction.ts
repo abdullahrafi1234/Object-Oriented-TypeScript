@@ -31,3 +31,29 @@
 // const myPlayer1 = new MusicPlayer();
 // myPlayer1.play();
 // // myPlayer1.stop();
+
+// abstract class idea
+abstract class MediaPlayer {
+  abstract play(): void;
+  abstract pause(): void;
+  abstract stop(): void;
+}
+
+// abstract class theke kokhono instance create kora jayna
+
+// Implementation
+class RafisPlayer extends MediaPlayer {
+  play(): void {
+    console.log(`Music playing..`);
+  }
+  pause(): void {
+    console.log(`Music Paused`);
+  }
+  stop(): void {
+    console.log(`Music stooped`);
+  }
+}
+
+const myPlayer1 = new RafisPlayer();
+
+myPlayer1.play();
